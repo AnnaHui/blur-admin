@@ -3,6 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+// level component
+import { ThemeModule } from "./theme/theme.module"
+
+
+//app component
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -12,7 +17,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    ThemeModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
